@@ -1,0 +1,95 @@
+.top {
+    background-color: #777;
+    height: 90;
+}
+
+.logo {
+    width: 90;
+    float: left;
+    margin-right: 30;
+}
+
+.shop-name {
+    font-size: 36;
+    color: white;
+    display: table-cell;
+    float: left;
+}
+
+ul li {
+    list-style: none;
+}
+
+.tool-bar {
+    float: right;
+    margin-top: 33;
+    margin-right: 80;
+}
+
+.tool-bar a {
+    color: white;
+    font-size: 20;
+    text-decoration: none;
+}
+
+.tool-bar li {
+    float: left;
+    padding: 0px 30px;
+}
+
+.mid {
+    margin-top: 20;
+    height: 1000px;
+}
+
+.ad span {
+    float: left;
+    margin-right: 100px;
+}
+
+.ad img {
+    width: 300;
+}
+
+.ad {
+    margin-left: 300;
+}
+
+.bottom {
+    background-color: #333;
+}
+
+.note {
+    width: 20%;
+    color: white;
+    font-size: 30;
+    font-weight: 300;
+    margin-left: 30;
+    float: left;
+}
+
+.contact-info {
+    float: left;
+    margin-left: 50 ;
+    margin-right: 120px;
+}
+
+.contact {
+    margin-left: 20;
+    color: white;
+    font-size: large;
+}
+
+.contact a {
+    color: yellow;
+}
+
+.contact:hover {
+    background-color: #777;
+}
+
+.address {
+    font-size: large;
+    margin-left: 100;
+    color: white;
+}
