@@ -1,7 +1,10 @@
+body {
+    margin: 0;
+}
+
 .top {
     background-color: #777;
     height: 90;
-    margin-bottom: 50;
 }
 
 .logo {
@@ -47,23 +50,38 @@ ul li {
 }
 
 .mid {
-    height: 2230;
+    height: 2400;
     float: left;
     background-color: white;
 }
 
 .finding {
-    width: 30%;
+    width: 16%;
+    height: 800;
     background-color: #999;
     float: left;
 }
 
+.finding a {
+    text-decoration: none;
+    color: black;
+    font-size: 20;
+}
+
+.finding a:hover {
+    color: red;
+}
+
+.finding ul {
+    margin-top: 200;
+}
+
 .content-wrapped {
-    margin-left: 200px;
+    margin-left: 270px;
     width: 70%;
 }
 
-span {
+.item span {
     font-weight: 600;
 }
 
@@ -74,9 +92,13 @@ span {
     margin-left: 25px;
 }
 
+.item div {
+    font-weight: 600;
+}
+
 .item:hover {
-    opacity: 0.5;
     color: blue;
+    opacity: 0.5;
 }
 
 .item img {
@@ -112,6 +134,7 @@ span {
 
 .contact a {
     color: yellow;
+    text-decoration: none;
 }
 
 .contact:hover {
