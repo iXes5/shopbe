@@ -1,16 +1,20 @@
 body {
-    margin: 0;
+    margin: 0px;
+}
+
+ul li {
+    list-style: none;
 }
 
 .top {
-    background-color: #777;
-    height: 90;
+    background-color: black;
+    height: 90px;
 }
 
 .logo {
-    width: 90;
+    width: 90px;
     float: left;
-    margin-right: 30;
+    margin-right: 30px;
 }
 
 .shop-name {
@@ -20,51 +24,34 @@ body {
     float: left;
 }
 
-ul li {
-    list-style: none;
-}
-
-.tool-bar {
-    float: right;
-    margin-top: 33;
-    margin-right: 80;
-}
-
-.tool-bar a {
-    color: white;
-    font-size: 20;
-    text-decoration: none;
-}
-
-.tool-bar a:hover {
-    color: orange;
-}
-
-.tool-bar li {
-    float: left;
-    padding: 0px 30px;
-}
-
-.mode-choose a {
-    color: black;
-}
-
 .mid {
-    height: 2400;
+    height: 2200px;
     float: left;
     background-color: white;
 }
 
+.search {
+    margin-top: 20px;
+}
+
+.search-box {
+    width: 145px;
+}
+
+.search-button {
+    float: right;
+}
+
 .finding {
     width: 16%;
-    height: 800;
-    background-color: #999;
+    height: 800px;
+    background-color: black;
     float: left;
 }
 
 .finding a {
     text-decoration: none;
-    color: black;
+    color: #00ced1;
     font-size: 20;
 }
 
@@ -72,17 +59,23 @@ ul li {
     color: red;
 }
 
-.finding ul {
-    margin-top: 200;
+.finding table {
+    margin-top: 170px;
+    margin-left: 40px;
+    
+}
+
+.line-effect {
+    width: 0px;
+    height: 0px;
+    background-color: red;
+    position: fixed;
+    pointer-events: none;
 }
 
 .content-wrapped {
-    margin-left: 270px;
+    margin-left: 330px;
     width: 70%;
-}
-
-.item span {
-    font-weight: 600;
 }
 
 .item {
@@ -92,13 +85,8 @@ ul li {
     margin-left: 25px;
 }
 
-.item div {
-    font-weight: 600;
-}
-
-.item:hover {
-    color: blue;
-    opacity: 0.5;
+.item span {
+    font-weight: 900px;
 }
 
 .item img {
@@ -106,8 +94,52 @@ ul li {
     height: 170px;
 }
 
+.item a {
+    text-decoration: none;
+    color: black;
+}
+
+.item:hover img {
+    opacity: 0.5;
+}
+
+.item:hover b {
+    color: blue;
+}
+
+.item:hover strong {
+    color: blue;
+}
+
+.item:hover span {
+    color: blue;
+}
+
+.cost {
+    width: 25%;
+    float: left;
+}
+
+.confirm {
+    margin-left: 150px;
+    margin-bottom: 50px;
+}
+
+.customer {
+    float: left;
+    margin-top: 80px;
+}
+
+.wholesale {
+
+}
+
+.buying {
+    width: 80px;
+}
+
 .bottom {
-    background-color: #333;
+    background-color: black;
 }
 
 .note {
@@ -115,14 +147,14 @@ ul li {
     color: white;
     font-size: 30;
     font-weight: 300;
-    margin-left: 40;
-    margin-top: 30;
+    margin-left: 40px;
+    margin-top: 30px;
     float: left;
 }
 
 .contact-info {
     float: left;
-    margin-left: 40 ;
+    margin-left: 40px;
     margin-right: 120px;
 }
 
@@ -143,6 +175,6 @@ ul li {
 
 .address {
     font-size: large;
-    margin-left: 100;
+    margin-left: 100px;
     color: white;
 }

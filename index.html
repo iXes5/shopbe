@@ -1,521 +1,861 @@
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
 
-    <title>Shopbe</title>
+        <title>Shopbe</title>
 
-    <!--Jquery-->
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-</head>
-<body>
-    <!--Css file-->
-    <link rel="stylesheet" href="./style.css">
-    <!--Javascript file-->
-    <script src="./formula.js"></script>
+        <!--Jquery-->
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    </head>
 
-    <div class="container">
-        <div class="top">
-            <!--Shops logo-->
-            <img class="logo" src="image/logo.png" alt="logo">
+    <body>
+        <!--Css file-->
+        <link rel="stylesheet" href="./style.css">
 
-            <div class="menu">
-                <h1 class="shop-name">Shopbe</h1>
-            
-                <!--Toolbar-->
-                <ul class="tool-bar">
-                    <li class="mode-choose"><a href="./index.html">Mua lẻ</a></li>
-                    <li><a href="./multi.html">Mua sỉ</a></li>
-                </ul>
+        <!--Javascript file-->
+        <script src="./basic.js"></script>
+
+        <div class="container">
+            <div class="top">
+                <!--Shops logo-->
+                <img class="logo" src="image/logo.png" alt="logo">
+
+                <div class="menu">
+                    <h1 class="shop-name">Shopbe</h1>
+                </div>
             </div>
+
+            <article class="mid">
+                <!--Finding column, help costumers easier to see the favourite items-->
+                <div class="finding">
+                    <div class="search">
+                        <input class="search-box" type="text" placeholder="Nhập tên sản phẩm">
+        
+                        <input class="search-button" onclick="search()" type="button" value="Tìm kiếm">
+                    </div>
+                    
+                    <table class="finding-bar">
+                        <tr>
+                            <td>
+                                <a class="keyword" href="">Các loại hạt</a>
+                            </td>
+                        </tr>
+                            
+                        <tr>
+                            <td>
+                                <a class="keyword" href="">Đồ đóng hộp</a>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <a class="keyword" href="">Hoa quả tươi</a>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <a class="keyword" href="">Nước có gas</a>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <a class="keyword" href="">Nước có cồn</a>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <a class="keyword" href="">Đồ ăn nhanh</a>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <a class="keyword" href="">Thức ăn vặt</a>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <a class="keyword" href="">Mì ăn liền</a>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="content-wrapped">
+                    <!--Show the content-->
+                    <div class="1">
+                        <div id="0" class="item">
+                            <a href="product/0.html">
+                                <div>
+                                    <img src="./image/1hatde.jpg" alt="hạt dẻ">
+                                </div>
+                                <b>Hạt dẻ</b>
+                                <strong>20000</strong>
+                                <span>VND</span>
+                            </a>
+                        </div>
+                        
+                        <div id="1" class="item">
+                            <a href="product/1.html">
+                                <div>
+                                    <img src="./image/1hatlac.jpg" alt="hạt lạc">
+                                </div>
+                                <b>Hạt lạc</b>
+                                <strong>22000</strong>
+                                <span>VND</span>
+                            </a>
+                        </div>
+                        
+                        <div id="2" class="item">
+                            <a href="product/2.html">
+                                <div>
+                                    <img src="./image/1hatme.jpg" alt="hạt mè">
+                                </div>
+                                <b>Hạt mè</b>
+                                <strong>10000</strong>
+                                <span>VND</span>
+                            </a>
+                        </div>
+                        
+                        <div id="3" class="item">
+                            <a href="product/3.html">
+                                <div>
+                                    <img src="./image/1hatoccho.jpg" alt="hạt óc chó">
+                                </div>
+                                <b>Hạt óc chó</b>
+                                <strong>25000</strong>
+                                <span>VND</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="2">
+                        <div id="4" class="item">
+                            <a href="product/4.html">
+                                <div>
+                                    <img src="./image/2lonhop.jpg" alt="lợn hộp">
+                                </div>
+                                <b>Lợn hộp</b>
+                                <strong>28000</strong>
+                                <span>VND</span>
+                            </a>
+                        </div>
+                        
+                        <div id="5" class="item">
+                            <a href="product/5.html">
+                                <div>
+                                    <img src="./image/2rauhop.jpg" alt="rau hộp">
+                                </div>
+                                <b>Rau hộp</b>
+                                <strong>23000</strong>
+                                <span>VND</span>
+                            </a>
+                        </div>
+        
+                        <div id="6" class="item">
+                            <a href="product/6.html">
+                                <div>
+                                    <img src="./image/2bohop.jpg" alt="bò hộp">
+                                </div>
+                                <b>Bò hộp</b>
+                                <strong>25000</strong>
+                                <span>VND</span>
+                            </a>
+                        </div>
+                        
+                        <div id="7" class="item">
+                            <a href="product/7.html">
+                                <div>
+                                    <img src="./image/2tomhop.jpg" alt="tôm hộp">
+                                </div>
+                                
+                                <b>Tôm hộp</b>
+                                <strong>31000</strong>
+                                <span>VND</span>
+                            </a>
+                        </div>
+                        
+                        <div id="8" class="item">
+                            <a href="product/8.html">
+                                <div>
+                                    <img src="./image/2traicayhop.jpg" alt="Hoa quả hộp">
+                                </div>
+                                <b>Hoa quả hộp</b>
+                                <strong>20000</strong>
+                                <span>VND</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="3">
+                        <div id="9" class="item">
+                            <a href="product/9.html">
+                                <div>
+                                    <img src="./image/3dau.jpg" alt="dâu">
+                                </div>
+                                <b>Dâu</b>
+                                <strong>10000</strong>
+                                <span>VND</span>
+                            </a>
+                        </div>
+        
+                        <div id="10" class="item">
+                            <a href="product/10.html">
+                                <div>
+                                    <img src="./image/3cam.jpg" alt="cam">
+                                </div>
+                                <b>Cam</b>
+                                <strong>5000</strong>
+                                <span>VND</span>
+                            </a>
+                        </div>
+        
+                        <div id="11" class="item">
+                            <a href="product/11.html">
+                                <div>
+                                    <img src="./image/3dua.jpg" alt="dưa">
+                                </div>
+                                <b>Dưa</b>
+                                <strong>8000</strong>
+                                <span>VND</span>
+                            </a>
+                        </div>
+        
+                        <div id="12" class="item">
+                            <a href="product/12.html">
+                                <div>
+                                    <img src="./image/3tao.jpg" alt="táo">
+                                </div>
+                                <b>Táo</b>
+                                <strong>7000</strong>
+                                <span>VND</span>
+                            </a>
+                        </div>
+                        
+                        <div id="13" class="item">
+                            <a href="product/13.html">
+                                <div>
+                                    <img src="./image/3xoai.jpg" alt="xoài">
+                                </div>
+                                <b>Xoài</b>
+                                <strong>8000</strong>
+                                <span>VND</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="4">
+                        <div id="14" class="item">
+                            <a href="product/14.html">
+                                <div>
+                                    <img src="./image/4c2.jpg" alt="c2">
+                                </div>
+                                <b>C2</b>
+                                <strong>10000</strong>
+                                <span>VND</span>
+                            </a>
+                        </div>
+                        
+                        <div id="15" class="item">
+                            <a href="product/15.html">
+                                <div>
+                                    <img src="./image/4coca.jpg" alt="cocacola">
+                                </div>
+                                <b>Cocacola</b>
+                                <strong>12000</strong>
+                                <span>VND</span>
+                            </a>
+                        </div>
+                        
+                        <div id="16" class="item">
+                            <a href="product/16.html">
+                                <div>
+                                    <img src="./image/4pepsi.jpg" alt="pepsi">
+                                </div>
+                                <b>Pepsi</b>
+                                <strong>12000</strong>
+                                <span>VND</span>
+                            </a>
+                        </div>
+                        
+                        <div id="17" class="item">
+                            <a href="product/17.html">
+                                <div>
+                                    <img src="./image/4sevenup.jpg" alt="7up">
+                                </div>
+                                <b>7up</b>
+                                <strong>10000</strong>
+                                <span>VND</span>
+                            </a>
+                        </div>
+                        
+                        <div id="18" class="item">
+                            <a href="product/18.html">
+                                <div>
+                                    <img src="./image/4sting.jpg" alt="sting">
+                                </div>
+                                <b>Sting</b>
+                                <strong>10000</strong>
+                                <span>VND</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="5">
+                        <div id="19" class="item">
+                            <a href="product/19.html">
+                                <div>
+                                    <img src="./image/5gin.jpg" alt="gin">
+                                </div>
+                                <b>Rượu gin</b>
+                                <strong>1000000</strong>
+                                <span>VND</span>
+                            </a>
+                        </div>
+                        
+                        <div id="20" class="item">
+                            <a href="product/20.html">
+                                <div>
+                                    <img src="./image/5heniken.jpg" alt="heniken">
+                                </div>
+                                <b>Bia heniken</b>
+                                <strong>18000</strong>
+                                <span>VND</span>
+                            </a>
+                        </div>
+                        
+                        <div id="21" class="item">
+                            <a href="product/21.html">
+                                <div>
+                                    <img src="./image/5strongbow.jpg" alt="strongbow">
+                                </div>
+                                <b>Strongbow</b>
+                                <strong>20000</strong>
+                                <span>VND</span>
+                            </a>
+                        </div>
+                        
+                        <div id="22" class="item">
+                            <a href="product/22.html">
+                                <div>
+                                    <img src="./image/5tiger.jpg" alt="tiger">
+                                </div>
+                                <b>Bia tiger</b>
+                                <strong>17000</strong>
+                                <span>VND</span>
+                            </a>
+                        </div>
+                        
+                        <div id="23" class="item">
+                            <a href="product/23.html">
+                                <div>
+                                    <img src="./image/5vodkka.jpg" alt="vodka">
+                                </div>
+                                <b>Rượu vodka</b>
+                                <strong>1200000</strong>
+                                <span>VND</span>
+                            </a>
+                        </div>
+                        
+                        <div id="24" class="item">
+                            <a href="product/24.html">
+                                <div>
+                                    <img src="./image/5sherry.jpg" alt="sherry">
+                                </div>
+                                <b>Rượu sherry</b>
+                                <strong>1100000</strong>
+                                <span>VND</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="6">
+                        <div id="25" class="item">
+                            <a href="product/25.html">
+                                <div>
+                                    <img src="./image/6ga.jpg" alt="gà rán">
+                                </div>
+                                <b>Gà rán</b>
+                                <strong>25000</strong>
+                                <span>VND</span>
+                            </a>
+                        </div>
+                        
+                        <div id="26" class="item">
+                            <a href="product/26.html">
+                                <div>
+                                    <img src="./image/6khoai.jpg" alt="khoai chiên">
+                                </div>
+                                <b>Khoai chiên</b>
+                                <strong>23000</strong>
+                                <span>VND</span>
+                            </a>
+                        </div>
+                        
+                        <div id="27" class="item">
+                            <a href="product/27.html">
+                                <div>
+                                    <img src="./image/6pizza.jpg" alt="pizza">
+                                </div>
+                                <b>Pizza</b>
+                                <strong>80000</strong>
+                                <span>VND</span>
+                            </a>
+                        </div>
+                        
+                        <div id="28" class="item">
+                            <a href="product/28.html">
+                                <div>
+                                    <img src="./image/6taco.jpg" alt="taco">
+                                </div>
+                                <b>Bánh taco</b>
+                                <strong>32000</strong>
+                                <span>VND</span>
+                            </a>
+                        </div>
+                        
+                        <div id="29" class="item">
+                            <a href="product/29.html">
+                                <div>
+                                    <img src="./image/6tokbokki.jpg" alt="tokbokki">
+                                </div>
+                                <b>Tokbokki</b>
+                                <strong>35000</strong>
+                                <span>VND</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="7">
+                        <div id="30" class="item">
+                            <a href="product/30.html">
+                                <div>
+                                    <img src="./image/7banhflan.jpg" alt="bánh flan">
+                                </div>
+                                <b>Bánh flan</b>
+                                <strong>27000</strong>
+                                <span>VND</span>
+                            </a>
+                        </div>
+                        
+                        <div id="31" class="item">
+                            <a href="product/31.html">
+                                <div>
+                                    <img src="./image/7banhgato.jpg" alt="bánh gato">
+                                </div>
+                                <b>Bánh gato</b>
+                                <strong>120000</strong>
+                                <span>VND</span>
+                            </a>
+                        </div>
+        
+                        <div id="32" class="item">
+                            <a href="product/32.html">
+                                <div>
+                                    <img src="./image/7banhquy.jpg" alt="bánh quy">
+                                </div>
+                                <b>Bánh quy</b>
+                                <strong>70000</strong>
+                                <span>VND</span>
+                            </a>
+                        </div>
+        
+                        <div id="33" class="item">
+                            <a href="product/33.html">
+                                <div>
+                                    <img src="./image/7socola.jpg" alt="socola">
+                                </div>
+                                <b>Socola</b>
+                                <strong>50000</strong>
+                                <span>VND</span>
+                            </a>
+                        </div>
+        
+                        <div id="34" class="item">
+                            <a href="product/34.html">
+                                <div>
+                                    <img src="./image/7keocaosu.jpg" alt="kẹo cao su">
+                                </div>
+                                <b>Kẹo cao su</b>
+                                <strong>50000</strong>
+                                <span>VND</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="8">
+                        <div id="35" class="item">
+                            <a href="product/35.html">
+                                <div>
+                                    <img src="./image/8milanh.jpg" alt="mì lạnh">
+                                </div>
+                                <b>Mì lạnh</b>
+                                <strong>36000</strong>
+                                <span>VND</span>
+                            </a>
+                        </div>
+        
+                        <div id="36" class="item">
+                            <a href="product/36.html">
+                                <div>
+                                    <img src="./image/8ramen.jpg" alt="mì ramen">
+                                </div>
+                                <b>Mì ramen</b>
+                                <strong>35000</strong>
+                                <span>VND</span>
+                            </a>
+                        </div>
+        
+                        <div id="37" class="item">
+                            <a href="product/37.html">
+                                <div>
+                                    <img src="./image/8soba.jpg" alt="mì soba">
+                                </div>
+                                <b>Mì soba</b>
+                                <strong>32000</strong>
+                                <span>VND</span>
+                            </a>
+                        </div>
+        
+                        <div id="38" class="item">
+                            <a href="product/38.html">
+                                <div>
+                                    <img src="./image/8spaghetti.jpg" alt="mì spaghetti">
+                                </div>
+                                <b>Mì spaghetti</b>
+                                <strong>37000</strong>
+                                <span>VND</span>
+                            </a>
+                        </div>
+        
+                        <div id="39" class="item">
+                            <a href="product/39.html">
+                                <div>
+                                    <img src="./image/8udon.jpg" alt="mì udon">
+                                </div>
+                                <b>Mì udon</b>
+                                <strong>32000</strong>
+                                <span>VND</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <div class="confirm">
+                <form class="customer">
+                    <table>
+                        <tr>
+                            <td>
+                                <label class="infor">Họ tên:</label>
+                            </td>
+
+                            <td>
+                                <input type="text" id="name">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <label class="infor">Tuổi:</label>
+                            </td>
+
+                            <td>
+                                <input type="text" id="age">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <label class="infor">Email:</label>
+                            </td>
+
+                            <td>
+                                <input type="text" id="email">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <label class="infor">Giới tính</label>
+                            </td>
+
+                            <td>
+                                <input type="radio" name="gender" value="Nam" checked id="male">Nam
+                                <input type="radio" name="gender" value="Nữ" id="female">Nữ
+                            </td>
+                        </tr>
+                    </table>
+
+                    <div>
+                        <input class="wholesale-button" type="button" value="Gửi thông tin" onclick="wholesale()">
+                        <input class="wholesale-button" type="button" value="Reset" onclick="wholesaleReset()">
+                    </div>
+                </form>
+
+                <div class="wholesale">
+                    <table>
+                        <tr>
+                            <td>
+                                <div>Hạt dẻ</div>
+                                <span><input type="text" class="buying" name="Hạt dẻ"></span>
+                            </td>
+
+                            <td>
+                                <div>Hạt lạc</div>
+                                <span><input type="text" class="buying" name="Hạt lạc"></span>
+                            </td>
+
+                            <td>
+                                <div>Hạt mè</div>
+                                <span><input type="text" class="buying" name="Hạt mè"></span>
+                            </td>
+
+                            <td>
+                                <div>Hạt óc chó</div>
+                                <span><input type="text" class="buying" name="Hạt óc chó"></span>
+                            </td>
+
+                            <td>
+                                <div>Bò hộp</div>
+                                <span><input type="text" class="buying" name="Bò hộp"></span>
+                            </td>
+
+                            <td>
+                                <div>Lợn hộp</div>
+                                <span><input type="text" class="buying" name="Lợn hộp"></span>
+                            </td>
+
+                            <td>
+                                <div>Rau hộp</div>
+                                <span><input type="text" class="buying" name="Rau hộp"></span>
+                            </td>
+
+                            <td>
+                                <div>Tôm hộp</div>
+                                <span><input type="text" class="buying" name="Tôm hộp"></span>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <div>Hoa quả hộp</div>
+                                <span><input type="text" class="buying" name="Hoa quả hộp"></span>
+                            </td>
+
+                            <td>
+                                <div>Cam</div>
+                                <span><input type="text" class="buying" name="Cam"></span>
+                            </td>
+
+                            <td>
+                                <div>Dâu tây</div>
+                                <span><input type="text" class="buying" name="Dâu tây"></span>
+                            </td>
+
+                            <td>
+                                <div>Dưa</div>
+                                <span><input type="text" class="buying" name="Dưa"></span>
+                            </td>
+
+                            <td>
+                                <div>Táo</div>
+                                <span><input type="text" class="buying" name="Táo"></span>
+                            </td>
+
+                            <td>
+                                <div>Xoài</div>
+                                <span><input type="text" class="buying" name="Xoài"></span>
+                            </td>
+
+                            <td>
+                                <div>C2</div>
+                                <span><input type="text" class="buying" name="C2"></span>
+                            </td>
+
+                            <td>
+                                <div>Coca</div>
+                                <span><input type="text" class="buying" name="Coca"></span>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <div>Pepsi</div>
+                                <span><input type="text" class="buying" name="Pepsi"></span>
+                            </td>
+
+                            <td>
+                                <div>7up</div>
+                                <span><input type="text" class="buying" name="7up"></span>
+                            </td>
+
+                            <td>
+                                <div>Sting</div>
+                                <span><input type="text" class="buying" name="Sting"></span>
+                            </td>
+
+                            <td>
+                                <div>Gin</div>
+                                <span><input type="text" class="buying" name="Gin"></span>
+                            </td>
+
+                            <td>
+                                <div>Heniken</div>
+                                <span><input type="text" class="buying" name="Heniken"></span>
+                            </td>
+
+                            <td>
+                                <div>Sherry</div>
+                                <span><input type="text" class="buying" name="Sherry"></span>
+                            </td>
+
+                            <td>
+                                <div>Strongbow</div>
+                                <span><input type="text" class="buying" name="Strongbow"></span>
+                            </td>
+
+                            <td>
+                                <div>Tiger</div>
+                                <span><input type="text" class="buying" name="Tiger"></span>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <div>Vodka</div>
+                                <span><input type="text" class="buying" name="Vodka"></span>
+                            </td>
+
+                            <td>
+                                <div>Gà rán</div>
+                                <span><input type="text" class="buying" name="Gà rán"></span>
+                            </td>
+
+                            <td>
+                                <div>Khoai chiên</div>
+                                <span><input type="text" class="buying" name="Khoai chiên"></span>
+                            </td>
+
+                            <td>
+                                <div>Pizza</div>
+                                <span><input type="text" class="buying" name="Pizza"></span>
+                            </td>
+
+                            <td>
+                                <div>Taco</div>
+                                <span><input type="text" class="buying" name="Taco"></span>
+                            </td>
+
+                            <td>
+                                <div>Tokbokki</div>
+                                <span><input type="text" class="buying" name="Tokbokki"></span>
+                            </td>
+
+                            <td>
+                                <div>Bánh flan</div>
+                                <span><input type="text" class="buying" name="Bánh flan"></span>
+                            </td>
+
+                            <td>
+                                <div>Bánh gato</div>
+                                <span><input type="text" class="buying" name="Bánh gato"></span>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <div>Bánh quy</div>
+                                <span><input type="text" class="buying" name="Bánh quy"></span>
+                            </td>
+
+                            <td>
+                                <div>Kẹo cao su</div>
+                                <span><input type="text" class="buying" name="Kẹo cao su"></span>
+                            </td>
+
+                            <td>
+                                <div>Socola</div>
+                                <span><input type="text" class="buying" name="Socola"></span>
+                            </td>
+
+                            <td>
+                                <div>Mì lạnh</div>
+                                <span><input type="text" class="buying" name="Mì lạnh"></span>
+                            </td>
+
+                            <td>
+                                <div>Mì ramen</div>
+                                <span><input type="text" class="buying" name="Mì ramen"></span>
+                            </td>
+
+                            <td>
+                                <div>Mì soba</div>
+                                <span><input type="text" class="buying" name="Mì soba"></span>
+                            </td>
+
+                            <td>
+                                <div>Mì spaghetti</div>
+                                <span><input type="text" class="buying" name="Mì spaghetti"></span>
+                            </td>
+
+                            <td>
+                                <div>Mì udon</div>
+                                <span><input type="text" class="buying" name="Mì udon"></span>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+            <footer class="bottom">
+                <div class="note">
+                    Thông tin liên hệ
+                </div>
+
+                <!--Contact-->
+                <div class="infor">
+                    <table class="contact-info">
+                        <tr class="contact">
+                            <td>Email: quangsexy01@gmail.com</td>
+                        </tr>
+
+                        <tr class="contact">
+                            <td>Số điện thoại: 0357131476</td>
+                        </tr>
+
+                        <tr class="contact">
+                            <td>
+                                <span>Facebook:</span>
+                                <a href="https://www.facebook.com/vuquang.tran.0511/">Vũ Quang</a>
+                            </td>
+                        </tr>
+
+                        <tr class="contact">
+                            <td>
+                                <span>Ingram:</span>
+                                <a href="https://www.instagram.com/tvq_sexi/">Vũ Quang</a>
+                            </td>
+                        </tr>
+                    </table>
+        
+                    <!--Address-->
+                    <ul class="address">
+                        <li>Đường 7, Hai Bà Trưng, Hà Nội</li>
+                        <li>Láng Lớn, Cẩm Mỹ, Đồng Nai</li>
+                        <li>Đường Võ Thị Sáu, Quận 1, Hồ Chí Minh</li>
+                        <li>Nam Cường, Nam Đàn, Nghệ An</li>
+                        <li>Xóm 5, Xà Bang, Vũng Tàu</li>
+                    </ul>
+                </div>
+            </footer>
         </div>
-
-        <article class="mid">
-            <!--Finding column, help costumers easier to see the favourite items-->
-            <div class="finding">
-                <ul>
-                    <li>
-                        <a href="">Các loại hạt</a>
-                    </li>
-
-                    <li>
-                        <a href="">Đồ hộp</a>
-                    </li>
-
-                    <li>
-                        <a href="">Trái cây</a>
-                    </li>
-
-                    <li>
-                        <a href="">Đồ uống có gas</a>
-                    </li>
-
-                    <li>
-                        <a href="">Đồ uống có cồn</a>
-                    </li>
-
-                    <li>
-                        <a href="">Đồ ăn nhanh</a>
-                    </li>
-
-                    <li>
-                        <a href="">Đồ ăn vặt</a>
-                    </li>
-
-                    <li>
-                        <a href="">Mì</a>
-                    </li>
-                </ul>
-            </div>
-
-            <div class="content-wrapped">
-                <!--Show the content-->
-                <div class="item">
-                    <div class="item-box">
-                        <img src="./image/1hatde.jpg" alt="hạt dẻ">
-                    </div>
-                    <a href="#"></a>
-                    <div>Hạt dẻ</div>
-                    <strong>20000</strong>
-                    <span>VND</span>
-                </div>
-                
-                <div class="item">
-                    <div class="item-box">
-                        <img src="./image/1hatlac.jpg" alt="hạt lạc">
-                    </div>
-                    <a href="#"></a>
-                    <div>Hạt lạc</div>
-                    <strong>22000</strong>
-                    <span>VND</span>
-                </div>
-                
-                <div class="item">
-                    <div class="item-box">
-                        <img src="./image/1hatme.jpg" alt="hạt mè">
-                    </div>
-                    <a href="#"></a>
-                    <div>Hạt mè</div>
-                    <strong>10000</strong>
-                    <span>VND</span>
-                </div>
-                
-                <div class="item">
-                    <div class="item-box">
-                        <img src="./image/1hatoccho.jpg" alt="hạt óc chó">
-                    </div>
-                    <a href="#"></a>
-                    <div>Hạt óc chó</div>
-                    <strong>25000</strong>
-                    <span>VND</span>
-                </div>
-                
-                <div class="item">
-                    <div class="item-box">
-                        <img src="./image/2lonhop.jpg" alt="lợn hộp">
-                    </div>
-                    <a href="#"></a>
-                    <div>Lợn hộp</div>
-                    <strong>28000</strong>
-                    <span>VND</span>
-                </div>
-                
-                <div class="item">
-                    <div class="item-box">
-                        <img src="./image/2rauhop.jpg" alt="rau hộp">
-                    </div>
-                    <a href="#"></a>
-                    <div>Rau hộp</div>
-                    <strong>23000</strong>
-                    <span>VND</span>
-                </div>
-
-                <div class="item">
-                    <div class="item-box">
-                        <img src="./image/2bohop.jpg" alt="bò hộp">
-                    </div>
-                    <a href="#"></a>
-                    <div>Bò hộp</div>
-                    <strong>25000</strong>
-                    <span>VND</span>
-                </div>
-                
-                <div class="item">
-                    <div class="item-box">
-                        <img src="./image/2tomhop.jpg" alt="tôm hộp">
-                    </div>
-                    <a href="#"></a>
-                    <div>Tôm hộp</div>
-                    <strong>31000</strong>
-                    <span>VND</span>
-                </div>
-                
-                <div class="item">
-                    <div class="item-box">
-                        <img src="./image/2traicayhop.jpg" alt="trái cây hộp">
-                    </div>
-                    <a href="#"></a>
-                    <div>Trái cây hộp</div>
-                    <strong>20000</strong>
-                    <span>VND</span>
-                </div>
-                
-                <div class="item">
-                    <div class="item-box">
-                        <img src="./image/3dau.jpg" alt="dâu">
-                    </div>
-                    <a href="#"></a>
-                    <div>Dâu</div>
-                    <strong>10000</strong>
-                    <span>VND</span>
-                </div>
-
-                <div class="item">
-                    <div class="item-box">
-                        <img src="./image/3cam.jpg" alt="cam">
-                    </div>
-                    <a href="#"></a>
-                    <div>Cam</div>
-                    <strong>5000</strong>
-                    <span>VND</span>
-                </div>
-
-                <div class="item">
-                    <div class="item-box">
-                        <img src="./image/3dua.jpg" alt="dưa">
-                    </div>
-                    <a href="#"></a>
-                    <div>Dưa</div>
-                    <strong>8000</strong>
-                    <span>VND</span>
-                </div>
-
-                <div class="item">
-                    <div class="item-box">
-                        <img src="./image/3tao.jpg" alt="táo">
-                    </div>
-                    <a href="#"></a>
-                    <div>Táo</div>
-                    <strong>7000</strong>
-                    <span>VND</span>
-                </div>
-                
-                <div class="item">
-                    <div class="item-box">
-                        <img src="./image/3xoai.jpg" alt="xoài">
-                    </div>
-                    <a href="#"></a>
-                    <div>Xoài</div>
-                    <strong>8000</strong>
-                    <span>VND</span>
-                </div>
-                
-                <div class="item">
-                    <div class="item-box">
-                        <img src="./image/4c2.jpg" alt="c2">
-                    </div>
-                    <a href="#"></a>
-                    <div>C2</div>
-                    <strong>10000</strong>
-                    <span>VND</span>
-                </div>
-                
-                <div class="item">
-                    <div class="item-box">
-                        <img src="./image/4coca.jpg" alt="cocacola">
-                    </div>
-                    <a href="#"></a>
-                    <div>Cocacola</div>
-                    <strong>12000</strong>
-                    <span>VND</span>
-                </div>
-                
-                <div class="item">
-                    <div class="item-box">
-                        <img src="./image/4pepsi.jpg" alt="pepsi">
-                    </div>
-                    <a href="#"></a>
-                    <div>Pepsi</div>
-                    <strong>12000</strong>
-                    <span>VND</span>
-                </div>
-                
-                <div class="item">
-                    <div class="item-box">
-                        <img src="./image/4sevenup.jpg" alt="7up">
-                    </div>
-                    <a href="#"></a>
-                    <div>7up</div>
-                    <strong>10000</strong>
-                    <span>VND</span>
-                </div>
-                
-                <div class="item">
-                    <div class="item-box">
-                        <img src="./image/4sting.jpg" alt="sting">
-                    </div>
-                    <a href="#"></a>
-                    <div>Sting</div>
-                    <strong>10000</strong>
-                    <span>VND</span>
-                </div>
-                
-                <div class="item">
-                    <div class="item-box">
-                        <img src="./image/5gin.jpg" alt="gin">
-                    </div>
-                    <a href="#"></a>
-                    <div>Rượu gin</div>
-                    <strong>1000000</strong>
-                    <span>VND</span>
-                </div>
-                
-                <div class="item">
-                    <div class="item-box">
-                        <img src="./image/5heniken.jpg" alt="heniken">
-                    </div>
-                    <a href="#"></a>
-                    <div>Bia heniken</div>
-                    <strong>18000</strong>
-                    <span>VND</span>
-                </div>
-                
-                <div class="item">
-                    <div class="item-box">
-                        <img src="./image/5strongbow.jpg" alt="strongbow">
-                    </div>
-                    <a href="#"></a>
-                    <div>Strongbow</div>
-                    <strong>20000</strong>
-                    <span>VND</span>
-                </div>
-                
-                <div class="item">
-                    <div class="item-box">
-                        <img src="./image/5tiger.jpg" alt="tiger">
-                    </div>
-                    <a href="#"></a>
-                    <div>Bia tiger</div>
-                    <strong>17000</strong>
-                    <span>VND</span>
-                </div>
-                
-                <div class="item">
-                    <div class="item-box">
-                        <img src="./image/5vodkka.jpg" alt="vodka">
-                    </div>
-                    <a href="#"></a>
-                    <div>Rượu vodka</div>
-                    <strong>1200000</strong>
-                    <span>VND</span>
-                </div>
-
-                <div class="item">
-                    <div class="item-box">
-                        <img src="./image/5sherry.jpg" alt="sherry">
-                    </div>
-                    <a href="#"></a>
-                    <div>Rượu sherry</div>
-                    <strong>1100000</strong>
-                    <span>VND</span>
-                </div>
-                
-                <div class="item">
-                    <div class="item-box">
-                        <img src="./image/6ga.jpg" alt="gà rán">
-                    </div>
-                    <a href="#"></a>
-                    <div>Gà rán</div>
-                    <strong>25000</strong>
-                    <span>VND</span>
-                </div>
-                
-                <div class="item">
-                    <div class="item-box">
-                        <img src="./image/6khoai.jpg" alt="khoai tây chiên">
-                    </div>
-                    <a href="#"></a>
-                    <div>Khoai tây chiên</div>
-                    <strong>23000</strong>
-                    <span>VND</span>
-                </div>
-                
-                <div class="item">
-                    <div class="item-box">
-                        <img src="./image/6pizza.jpg" alt="pizza">
-                    </div>
-                    <a href="#"></a>
-                    <div>Pizza</div>
-                    <strong>80000</strong>
-                    <span>VND</span>
-                </div>
-                
-                <div class="item">
-                    <div class="item-box">
-                        <img src="./image/6taco.jpg" alt="taco">
-                    </div>
-                    <a href="#"></a>
-                    <div>Bánh taco</div>
-                    <strong>32000</strong>
-                    <span>VND</span>
-                </div>
-                
-                <div class="item">
-                    <div class="item-box">
-                        <img src="./image/6tokbokki.jpg" alt="tokbokki">
-                    </div>
-                    <a href="#"></a>
-                    <div>Tokbokki</div>
-                    <strong>35000</strong>
-                    <span>VND</span>
-                </div>
-                
-                <div class="item">
-                    <div class="item-box">
-                        <img src="./image/7banhflan.jpg" alt="bánh flan">
-                    </div>
-                    <a href="#"></a>
-                    <div>Bánh flan</div>
-                    <strong>27000</strong>
-                    <span>VND</span>
-                </div>
-                
-                <div class="item">
-                    <div class="item-box">
-                        <img src="./image/7banhgato.jpg" alt="bánh gato">
-                    </div>
-                    <a href="#"></a>
-                    <div>Bánh gato</div>
-                    <strong>120000</strong>
-                    <span>VND</span>
-                </div>
-
-                <div class="item">
-                    <div class="item-box">
-                        <img src="./image/7banhquy.jpg" alt="bánh quy">
-                    </div>
-                    <a href="#"></a>
-                    <div>Bánh quy</div>
-                    <strong>70000</strong>
-                    <span>VND</span>
-                </div>
-
-                <div class="item">
-                    <div class="item-box">
-                        <img src="./image/7socola.jpg" alt="socola">
-                    </div>
-                    <a href="#"></a>
-                    <div>Socola</div>
-                    <strong>50000</strong>
-                    <span>VND</span>
-                </div>
-
-                <div class="item">
-                    <div class="item-box">
-                        <img src="./image/7keocaosu.jpg" alt="kẹo cao su">
-                    </div>
-                    <a href="#"></a>
-                    <div>Kẹo cao su</div>
-                    <strong>50000</strong>
-                    <span>VND</span>
-                </div>
-
-                <div class="item">
-                    <div class="item-box">
-                        <img src="./image/8milanh.jpg" alt="mì lạnh">
-                    </div>
-                    <a href="#"></a>
-                    <div>Mì lạnh</div>
-                    <strong>36000</strong>
-                    <span>VND</span>
-                </div>
-
-                <div class="item">
-                    <div class="item-box">
-                        <img src="./image/8ramen.jpg" alt="mì ramen">
-                    </div>
-                    <a href="#"></a>
-                    <div>Mì ramen</div>
-                    <strong>35000</strong>
-                    <span>VND</span>
-                </div>
-
-                <div class="item">
-                    <div class="item-box">
-                        <img src="./image/8soba.jpg" alt="mì soba">
-                    </div>
-                    <a href="#"></a>
-                    <div>Mì soba</div>
-                    <strong>32000</strong>
-                    <span>VND</span>
-                </div>
-
-                <div class="item">
-                    <div class="item-box">
-                        <img src="./image/8spaghetti.jpg" alt="mì spaghetti">
-                    </div>
-                    <a href="#"></a>
-                    <div>Mì spaghetti</div>
-                    <strong>37000</strong>
-                    <span>VND</span>
-                </div>
-
-                <div class="item">
-                    <div class="item-box">
-                        <img src="./image/8udon.jpg" alt="mì udon">
-                    </div>
-                    <a href="#"></a>
-                    <div>Mì udon</div>
-                    <strong>32000</strong>
-                    <span>VND</span>
-                </div>
-            </div>
-        </article>
-
-        <footer class="bottom">
-            <div class="note">
-                Thông tin liên hệ
-            </div>
-
-            <!--Contact-->
-            <div class="infor">
-                <table class="contact-info">
-                    <tr class="contact">
-                        <td>Email: quangsexy01@gmail.com</td>
-                    </tr>
-
-                    <tr class="contact">
-                        <td>Số điện thoại: 0357131476</td>
-                    </tr>
-
-                    <tr class="contact">
-                        <td>
-                            <span>Facebook:</span>
-                            <a href="https://www.facebook.com/vuquang.tran.0511/">Vũ Quang</a>
-                        </td>
-                    </tr>
-
-                    <tr class="contact">
-                        <td>
-                            <span>Ingram:</span>
-                            <a href="https://www.instagram.com/tvq_sexi/">Vũ Quang</a>
-                        </td>
-                    </tr>
-                </table>
-    
-                <!--Address-->
-                <ul class="address">
-                    <li>Đường 7, Hai Bà Trưng, Hà Nội</li>
-                    <li>Láng Lớn, Cẩm Mỹ, Đồng Nai</li>
-                    <li>Đường Võ Thị Sáu, Quận 1, Hồ Chí Minh</li>
-                    <li>Nam Cường, Nam Đàn, Nghệ An</li>
-                    <li>Xóm 5, Xà Bang, Vũng Tàu</li>
-                </ul>
-            </div>
-
-        </footer>
-    </div>
-</body>
+    </body>
 </html>
