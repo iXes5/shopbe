@@ -24,6 +24,10 @@ ul li {
     float: left;
 }
 
+.menu-bar {
+    
+}
+
 .mid {
     height: 2200px;
     float: left;
@@ -35,7 +39,7 @@ ul li {
 }
 
 .search-box {
-    width: 145px;
+    width: 172px;
 }
 
 .search-button {
@@ -43,7 +47,7 @@ ul li {
 }
 
 .finding {
-    width: 16%;
+    width: 18%;
     height: 800px;
     background-color: black;
     float: left;
@@ -115,29 +119,6 @@ ul li {
     color: blue;
 }
 
-.cost {
-    width: 25%;
-    float: left;
-}
-
-.confirm {
-    margin-left: 150px;
-    margin-bottom: 50px;
-}
-
-.customer {
-    float: left;
-    margin-top: 80px;
-}
-
-.wholesale {
-
-}
-
-.buying {
-    width: 80px;
-}
-
 .bottom {
     background-color: black;
 }
@@ -177,4 +158,47 @@ ul li {
     font-size: large;
     margin-left: 100px;
     color: white;
+}
+
+.wholesale-confirm {
+    margin-left: 150px;
+    margin-bottom: 50px;
+}
+
+.wholesale-customer {
+    float: left;
+    margin-top: 80px;
+}
+
+.wholesale-buying {
+    width: 80px;
+}
+
+.retail-mid {
+    height: 400px;
+    margin-top: 60px;
+    margin-left: 300px;
+}
+
+.retail-left {
+    float: left;
+    margin-right: 100px;
+    width: 200px;
+}
+
+.retail-left img {
+    border: black 2px solid;
+}
+
+.retail-right {
+    margin-top: 20px;
+}
+
+#retail-number {
+    width: 177px;
+}
+
+#retail-idea {
+    width: 300px;
+    height: 40px;
 }

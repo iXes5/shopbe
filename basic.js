@@ -31,11 +31,11 @@ window.addEventListener("load", function() {
 
 //Send the information
 function wholesale() {
-    var name =  document.getElementById("name");
-    var age = document.getElementById("age");
-    var email = document.getElementById("email");
-    var male = document.getElementById("male");
-    var female = document.getElementById("female");
+    var name =  document.getElementById("wholesale-name");
+    var age = document.getElementById("wholesale-age");
+    var email = document.getElementById("wholesale-email");
+    var male = document.getElementById("wholesale-male");
+    var female = document.getElementById("wholesale-female");
     var test = "";
     var arrString = email.value.split("");
 
@@ -71,7 +71,7 @@ function wholesale() {
     }
 
     //Wholesale array
-    var arrWholesale = document.getElementsByClassName("buying")
+    var arrWholesale = document.getElementsByClassName("wholesale-buying")
     var prize = document.getElementsByTagName("strong");
     var cost = 0;
     var check = 0;
@@ -142,5 +142,5 @@ function wholesale() {
 
 //Reset wholesale data
 function wholesaleReset(){
-    document.getElementsByClassName("confirm")[0].reset();
+    document.getElementsByClassName("wholesale-confirm")[0].reset();
 }

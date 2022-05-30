@@ -1,0 +1,358 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+
+        <title>Shopbe</title>
+
+        <!--Jquery-->
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    </head>
+
+    <body>
+        <!--Css file-->
+        <link rel="stylesheet" href="../style.css">
+
+        <!--Javascript file-->
+        <script src="../basic.js"></script>
+
+        <div class="container">
+            <div class="top">
+                <!--Shops logo-->
+                <img class="logo" src="../image/logo.png" alt="logo">
+
+                <div class="menu">
+                    <h1 class="shop-name">Shopbe</h1>
+                </div>
+
+                <table>
+                    <tr>
+                        <td>
+                            <a class="menu" href="./index.html">Home</a>
+                        </td>
+
+                        <td>
+                            <a class="menu" href="./retail.html">Retail</a>
+                        </td>
+
+                        <td>
+                            <p class="menu">Wholesale</p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <article class="wholesale-mid">
+                <div class="wholesale-confirm">
+                    <form class="wholesale-customer">
+                        <table>
+                            <tr>
+                                <td>
+                                    <label class="wholesale-infor">Họ tên:</label>
+                                </td>
+    
+                                <td>
+                                    <input type="text" id="wholesale-name">
+                                </td>
+                            </tr>
+    
+                            <tr>
+                                <td>
+                                    <label class="wholesale-infor">Tuổi:</label>
+                                </td>
+    
+                                <td>
+                                    <input type="text" id="wholesale-age">
+                                </td>
+                            </tr>
+    
+                            <tr>
+                                <td>
+                                    <label class="wholesale-infor">Email:</label>
+                                </td>
+    
+                                <td>
+                                    <input type="text" id="wholesale-email">
+                                </td>
+                            </tr>
+    
+                            <tr>
+                                <td>
+                                    <label class="wholesale-infor">Giới tính</label>
+                                </td>
+    
+                                <td>
+                                    <input type="radio" name="gender" value="Nam" checked id="wholesale-male">Nam
+                                    <input type="radio" name="gender" value="Nữ" id="wholesale-female">Nữ
+                                </td>
+                            </tr>
+                        </table>
+    
+                        <div>
+                            <input class="wholesale-button" type="button" value="Gửi thông tin" onclick="wholesale()">
+                            <input class="wholesale-button" type="button" value="Reset" onclick="wholesaleReset()">
+                        </div>
+                    </form>
+    
+                    <div class="wholesale">
+                        <table>
+                            <tr>
+                                <td>
+                                    <div>Hạt dẻ</div>
+                                    <span><input type="text" class="wholesale-buying" name="Hạt dẻ"></span>
+                                </td>
+    
+                                <td>
+                                    <div>Hạt lạc</div>
+                                    <span><input type="text" class="wholesale-buying" name="Hạt lạc"></span>
+                                </td>
+    
+                                <td>
+                                    <div>Hạt mè</div>
+                                    <span><input type="text" class="wholesale-buying" name="Hạt mè"></span>
+                                </td>
+    
+                                <td>
+                                    <div>Hạt óc chó</div>
+                                    <span><input type="text" class="wholesale-buying" name="Hạt óc chó"></span>
+                                </td>
+    
+                                <td>
+                                    <div>Bò hộp</div>
+                                    <span><input type="text" class="wholesale-buying" name="Bò hộp"></span>
+                                </td>
+    
+                                <td>
+                                    <div>Lợn hộp</div>
+                                    <span><input type="text" class="wholesale-buying" name="Lợn hộp"></span>
+                                </td>
+    
+                                <td>
+                                    <div>Rau hộp</div>
+                                    <span><input type="text" class="wholesale-buying" name="Rau hộp"></span>
+                                </td>
+    
+                                <td>
+                                    <div>Tôm hộp</div>
+                                    <span><input type="text" class="wholesale-buying" name="Tôm hộp"></span>
+                                </td>
+                            </tr>
+    
+                            <tr>
+                                <td>
+                                    <div>Hoa quả hộp</div>
+                                    <span><input type="text" class="wholesale-buying" name="Hoa quả hộp"></span>
+                                </td>
+    
+                                <td>
+                                    <div>Cam</div>
+                                    <span><input type="text" class="wholesale-buying" name="Cam"></span>
+                                </td>
+    
+                                <td>
+                                    <div>Dâu tây</div>
+                                    <span><input type="text" class="wholesale-buying" name="Dâu tây"></span>
+                                </td>
+    
+                                <td>
+                                    <div>Dưa</div>
+                                    <span><input type="text" class="wholesale-buying" name="Dưa"></span>
+                                </td>
+    
+                                <td>
+                                    <div>Táo</div>
+                                    <span><input type="text" class="wholesale-buying" name="Táo"></span>
+                                </td>
+    
+                                <td>
+                                    <div>Xoài</div>
+                                    <span><input type="text" class="wholesale-buying" name="Xoài"></span>
+                                </td>
+    
+                                <td>
+                                    <div>C2</div>
+                                    <span><input type="text" class="wholesale-buying" name="C2"></span>
+                                </td>
+    
+                                <td>
+                                    <div>Coca</div>
+                                    <span><input type="text" class="wholesale-buying" name="Coca"></span>
+                                </td>
+                            </tr>
+    
+                            <tr>
+                                <td>
+                                    <div>Pepsi</div>
+                                    <span><input type="text" class="wholesale-buying" name="Pepsi"></span>
+                                </td>
+    
+                                <td>
+                                    <div>7up</div>
+                                    <span><input type="text" class="wholesale-buying" name="7up"></span>
+                                </td>
+    
+                                <td>
+                                    <div>Sting</div>
+                                    <span><input type="text" class="wholesale-buying" name="Sting"></span>
+                                </td>
+    
+                                <td>
+                                    <div>Gin</div>
+                                    <span><input type="text" class="wholesale-buying" name="Gin"></span>
+                                </td>
+    
+                                <td>
+                                    <div>Heniken</div>
+                                    <span><input type="text" class="wholesale-buying" name="Heniken"></span>
+                                </td>
+    
+                                <td>
+                                    <div>Sherry</div>
+                                    <span><input type="text" class="wholesale-buying" name="Sherry"></span>
+                                </td>
+    
+                                <td>
+                                    <div>Strongbow</div>
+                                    <span><input type="text" class="wholesale-buying" name="Strongbow"></span>
+                                </td>
+    
+                                <td>
+                                    <div>Tiger</div>
+                                    <span><input type="text" class="wholesale-buying" name="Tiger"></span>
+                                </td>
+                            </tr>
+    
+                            <tr>
+                                <td>
+                                    <div>Vodka</div>
+                                    <span><input type="text" class="wholesale-buying" name="Vodka"></span>
+                                </td>
+    
+                                <td>
+                                    <div>Gà rán</div>
+                                    <span><input type="text" class="wholesale-buying" name="Gà rán"></span>
+                                </td>
+    
+                                <td>
+                                    <div>Khoai chiên</div>
+                                    <span><input type="text" class="wholesale-buying" name="Khoai chiên"></span>
+                                </td>
+    
+                                <td>
+                                    <div>Pizza</div>
+                                    <span><input type="text" class="wholesale-buying" name="Pizza"></span>
+                                </td>
+    
+                                <td>
+                                    <div>Taco</div>
+                                    <span><input type="text" class="wholesale-buying" name="Taco"></span>
+                                </td>
+    
+                                <td>
+                                    <div>Tokbokki</div>
+                                    <span><input type="text" class="wholesale-buying" name="Tokbokki"></span>
+                                </td>
+    
+                                <td>
+                                    <div>Bánh flan</div>
+                                    <span><input type="text" class="wholesale-buying" name="Bánh flan"></span>
+                                </td>
+    
+                                <td>
+                                    <div>Bánh gato</div>
+                                    <span><input type="text" class="wholesale-buying" name="Bánh gato"></span>
+                                </td>
+                            </tr>
+    
+                            <tr>
+                                <td>
+                                    <div>Bánh quy</div>
+                                    <span><input type="text" class="wholesale-buying" name="Bánh quy"></span>
+                                </td>
+    
+                                <td>
+                                    <div>Kẹo cao su</div>
+                                    <span><input type="text" class="wholesale-buying" name="Kẹo cao su"></span>
+                                </td>
+    
+                                <td>
+                                    <div>Socola</div>
+                                    <span><input type="text" class="wholesale-buying" name="Socola"></span>
+                                </td>
+    
+                                <td>
+                                    <div>Mì lạnh</div>
+                                    <span><input type="text" class="wholesale-buying" name="Mì lạnh"></span>
+                                </td>
+    
+                                <td>
+                                    <div>Mì ramen</div>
+                                    <span><input type="text" class="wholesale-buying" name="Mì ramen"></span>
+                                </td>
+    
+                                <td>
+                                    <div>Mì soba</div>
+                                    <span><input type="text" class="wholesale-buying" name="Mì soba"></span>
+                                </td>
+    
+                                <td>
+                                    <div>Mì spaghetti</div>
+                                    <span><input type="text" class="wholesale-buying" name="Mì spaghetti"></span>
+                                </td>
+    
+                                <td>
+                                    <div>Mì udon</div>
+                                    <span><input type="text" class="wholesale-buying" name="Mì udon"></span>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </article>
+
+            <footer class="bottom">
+                <div class="note">
+                    Thông tin liên hệ
+                </div>
+
+                <!--Contact-->
+                <div class="company-information">
+                    <table class="contact-info">
+                        <tr class="contact">
+                            <td>Email: quangsexy01@gmail.com</td>
+                        </tr>
+
+                        <tr class="contact">
+                            <td>Số điện thoại: 0357131476</td>
+                        </tr>
+
+                        <tr class="contact">
+                            <td>
+                                <span>Facebook:</span>
+                                <a href="https://www.facebook.com/vuquang.tran.0511/">Vũ Quang</a>
+                            </td>
+                        </tr>
+
+                        <tr class="contact">
+                            <td>
+                                <span>Ingram:</span>
+                                <a href="https://www.instagram.com/tvq_sexi/">Vũ Quang</a>
+                            </td>
+                        </tr>
+                    </table>
+        
+                    <!--Address-->
+                    <ul class="address">
+                        <li>Đường 7, Hai Bà Trưng, Hà Nội</li>
+                        <li>Láng Lớn, Cẩm Mỹ, Đồng Nai</li>
+                        <li>Đường Võ Thị Sáu, Quận 1, Hồ Chí Minh</li>
+                        <li>Nam Cường, Nam Đàn, Nghệ An</li>
+                        <li>Xóm 5, Xà Bang, Vũng Tàu</li>
+                    </ul>
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>

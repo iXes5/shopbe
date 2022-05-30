@@ -28,8 +28,84 @@
                 </div>
             </div>
 
-            <article class="mid">
-                
+            <article class="retail-mid">
+                <div class="retail-left">
+                    <img src="../image/1hatde.jpg" alt="hạt dẻ">
+
+                    <p>Hạt Óc chó rất bổ dưỡng, được tạo thành từ 65% chất béo và khoảng 15% protein. Chúng chứa ít carbs – hầu hết trong số đó bao gồm chất xơ.</p>
+                </div>
+
+                <div class="retail-right">
+                    <form class="customer">
+                        <table>
+                            <tr>
+                                <td>
+                                    <label class="retail-infor">Họ tên:</label>
+                                </td>
+    
+                                <td>
+                                    <input type="text" id="retail-name" class="reail-input">
+                                </td>
+                            </tr>
+    
+                            <tr>
+                                <td>
+                                    <label class="retail-infor">Tuổi:</label>
+                                </td>
+    
+                                <td>
+                                    <input type="text" id="retail-age" class="reail-input">
+                                </td>
+                            </tr>
+    
+                            <tr>
+                                <td>
+                                    <label class="retail-infor">Email:</label>
+                                </td>
+    
+                                <td>
+                                    <input type="text" id="retail-email" class="reail-input">
+                                </td>
+                            </tr>
+    
+                            <tr>
+                                <td>
+                                    <label class="retail-infor">Giới tính</label>
+                                </td>
+    
+                                <td>
+                                    <input type="radio" name="gender" value="Nam" checked id="retail-male" class="reail-input">Nam
+                                    <input type="radio" name="gender" value="Nữ" id="retail-female" class="reail-input">Nữ
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <label class="retail-infor">Số lượng</label>
+                                </td>
+    
+                                <td>
+                                    <input type="number" min="1" max="1000000000" id="retail-number" class="reail-input">
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <label class="retail-infor">Ý kiến khách hàng</label>
+                                </td>
+    
+                                <td>
+                                    <input type="text"id="retail-idea" class="reail-input">
+                                </td>
+                            </tr>
+                        </table>
+    
+                        <div>
+                            <input class="retail-button" type="button" value="Gửi thông tin" onclick="wholesale()">
+                            <input class="retail-button" type="button" value="Reset" onclick="wholesaleReset()">
+                        </div>
+                    </form>
+                </div>
             </article>
 
             <footer class="bottom">
@@ -38,7 +114,7 @@
                 </div>
 
                 <!--Contact-->
-                <div class="infor">
+                <div class="company-information">
                     <table class="contact-info">
                         <tr class="contact">
                             <td>Email: quangsexy01@gmail.com</td>
