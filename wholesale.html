@@ -16,7 +16,8 @@
         <link rel="stylesheet" href="../style.css">
 
         <!--Javascript file-->
-        <script src="../basic.js"></script>
+        <script src="../formula.js"></script>
+        <script src="./effect.js"></script>
 
         <div class="container">
             <div class="top">
@@ -27,14 +28,14 @@
                     <h1 class="shop-name">Shopbe</h1>
                 </div>
 
-                <table>
+                <table class="menu-bar">
                     <tr>
                         <td>
-                            <a class="menu" href="./index.html">Home</a>
+                            <a id="keyword" class="menu" href="./index.html">Home</a>
                         </td>
 
                         <td>
-                            <a class="menu" href="./retail.html">Retail</a>
+                            <a id="keyword" class="menu" href="./retail.html">Retail</a>
                         </td>
 
                         <td>
@@ -45,6 +46,10 @@
             </div>
 
             <article class="wholesale-mid">
+                <div class="wholesale-note">
+                    QUEN RỒI THÌ MUA CẢ TÁ ĐI
+                </div>
+
                 <div class="wholesale-confirm">
                     <form class="wholesale-customer">
                         <table>
@@ -78,6 +83,16 @@
                                 </td>
                             </tr>
     
+                            <tr>
+                                <td>
+                                    <label class="wholesale-infor">Địa chỉ:</label>
+                                </td>
+    
+                                <td>
+                                    <input type="text" id="wholesale-address">
+                                </td>
+                            </tr>
+
                             <tr>
                                 <td>
                                     <label class="wholesale-infor">Giới tính</label>
@@ -268,7 +283,7 @@
     
                             <tr>
                                 <td>
-                                    <div>Bánh quy</div>
+                                    <div>Adn Vũ Quang</div>
                                     <span><input type="text" class="wholesale-buying" name="Bánh quy"></span>
                                 </td>
     

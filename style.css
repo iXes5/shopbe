@@ -20,12 +20,36 @@ ul li {
 .shop-name {
     font-size: 36;
     color: white;
+    vertical-align: middle;
+    float: left;
+}
+
+.return-button a img {
+    width: 55px;
+    height: 70px;
+    margin-top: 15px;
+}
+
+.menu-bar {
+    margin-left: 1000px;
+}
+
+.menu-bar tr td a {
+    text-decoration: none;
+}
+
+.menu {
+    margin-left: 15px;
+    height: 36px;   
+    float: right;
+    font-size: 25;
+    color: white;
     display: table-cell;
     float: left;
 }
 
-.menu-bar {
-    
+.menu-bar tr td p {
+    color: red;
 }
 
 .mid {
@@ -55,7 +79,7 @@ ul li {
 
 .finding a {
     text-decoration: none;
-    color: #00ced1;
+    color: white;
     font-size: 20;
 }
 
@@ -64,7 +88,7 @@ ul li {
 }
 
 .finding table {
-    margin-top: 170px;
+    margin-top: 30px;
     margin-left: 40px;
     
 }
@@ -89,8 +113,8 @@ ul li {
     margin-left: 25px;
 }
 
-.item span {
-    font-weight: 900px;
+.item a span {
+    font-weight: 900;
 }
 
 .item img {
@@ -160,9 +184,17 @@ ul li {
     color: white;
 }
 
+.wholesale-note {
+    margin-top: 80px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 40;
+}
+
 .wholesale-confirm {
     margin-left: 150px;
     margin-bottom: 50px;
+    margin-top: 20px;
 }
 
 .wholesale-customer {
@@ -171,7 +203,11 @@ ul li {
 }
 
 .wholesale-buying {
-    width: 80px;
+    width: 100px;
+}
+
+.wholesale-mid {
+    height: 400px;
 }
 
 .retail-mid {
@@ -201,4 +237,12 @@ ul li {
 #retail-idea {
     width: 300px;
     height: 40px;
+}
+
+#product {
+    margin-left: 2px;
+}
+
+#cost {
+    margin-left: 75px;
 }

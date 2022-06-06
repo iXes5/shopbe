@@ -1,0 +1,173 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+
+        <title>Shopbe</title>
+
+        <!--Jquery-->
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    </head>
+
+    <body>
+        <!--Css file-->
+        <link rel="stylesheet" href="../style.css">
+
+        <!--Javascript file-->
+        <script src="../formula.js"></script>
+
+        <div class="container">
+            <div class="top">
+                <!--Shops logo-->
+                <img class="logo" src="../image/logo.png" alt="logo">
+
+                <div class="menu">
+                    <h1 class="shop-name">Shopbe</h1>
+
+                    <div class="return-button">
+                        <a href="../retail.html">
+                            <img src="../image/return.jpg" alt="return">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <article class="retail-mid">
+                <div class="retail-left">
+                    <img src="../image/1hatlac.jpg" alt="hạt lạc">
+
+                    <p>Đáng ra đây chính là phần giới thiệu chi tiết của sản phẩm, nhưng mà vũ quang đã quá mệt rồi nên quý vị vui lòng đọc dòng chữ này vì thông tin sản phẩm nhé, iu quý dị</p>
+                </div>
+
+                <div class="retail-right">
+                    <span id="product">Hạt lạc: </span>
+                    <span id="cost">22000</span>
+
+                    <form class="customer">
+                        <table>
+                            <tr>
+                                <td>
+                                    <label class="retail-infor">Họ tên:</label>
+                                </td>
+    
+                                <td>
+                                    <input type="text" id="retail-name" class="retail-input">
+                                </td>
+                            </tr>
+    
+                            <tr>
+                                <td>
+                                    <label class="retail-infor">Tuổi:</label>
+                                </td>
+    
+                                <td>
+                                    <input type="text" id="retail-age" class="retail-input">
+                                </td>
+                            </tr>
+    
+                            <tr>
+                                <td>
+                                    <label class="retail-infor">Email:</label>
+                                </td>
+    
+                                <td>
+                                    <input type="text" id="retail-email" class="retail-input">
+                                </td>
+                            </tr>
+    
+                            <tr>
+                                <td>
+                                    <label class="wholesale-infor">Địa chỉ:</label>
+                                </td>
+    
+                                <td>
+                                    <input type="text" id="wholesale-address">
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <label class="retail-infor">Giới tính</label>
+                                </td>
+    
+                                <td>
+                                    <input type="radio" name="gender" value="Nam" checked id="retail-male" class="reail-input">Nam
+                                    <input type="radio" name="gender" value="Nữ" id="retail-female" class="reail-input">Nữ
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <label class="retail-infor">Số lượng</label>
+                                </td>
+    
+                                <td>
+                                    <input type="number" min="1" max="1000000000" id="retail-number" class="reail-input">
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <label class="retail-infor">Ý kiến khách hàng</label>
+                                </td>
+    
+                                <td>
+                                    <input type="text"id="retail-idea" class="retail-input">
+                                </td>
+                            </tr>
+                        </table>
+    
+                        <div>
+                            <input class="retail-button" type="button" value="Gửi thông tin" onclick="retail()">
+                            <input class="retail-button" type="button" value="Reset" onclick="retailReset()">
+                        </div>
+                    </form>
+                </div>
+            </article>
+
+            <footer class="bottom">
+                <div class="note">
+                    Thông tin liên hệ
+                </div>
+
+                <!--Contact-->
+                <div class="company-information">
+                    <table class="contact-info">
+                        <tr class="contact">
+                            <td>Email: quangsexy01@gmail.com</td>
+                        </tr>
+
+                        <tr class="contact">
+                            <td>Số điện thoại: 0357131476</td>
+                        </tr>
+
+                        <tr class="contact">
+                            <td>
+                                <span>Facebook:</span>
+                                <a href="https://www.facebook.com/vuquang.tran.0511/">Vũ Quang</a>
+                            </td>
+                        </tr>
+
+                        <tr class="contact">
+                            <td>
+                                <span>Ingram:</span>
+                                <a href="https://www.instagram.com/tvq_sexi/">Vũ Quang</a>
+                            </td>
+                        </tr>
+                    </table>
+        
+                    <!--Address-->
+                    <ul class="address">
+                        <li>Đường 7, Hai Bà Trưng, Hà Nội</li>
+                        <li>Láng Lớn, Cẩm Mỹ, Đồng Nai</li>
+                        <li>Đường Võ Thị Sáu, Quận 1, Hồ Chí Minh</li>
+                        <li>Nam Cường, Nam Đàn, Nghệ An</li>
+                        <li>Xóm 5, Xà Bang, Vũng Tàu</li>
+                    </ul>
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>

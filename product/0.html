@@ -16,7 +16,7 @@
         <link rel="stylesheet" href="../style.css">
 
         <!--Javascript file-->
-        <script src="../basic.js"></script>
+        <script src="../formula.js"></script>
 
         <div class="container">
             <div class="top">
@@ -25,17 +25,26 @@
 
                 <div class="menu">
                     <h1 class="shop-name">Shopbe</h1>
+
+                    <div class="return-button">
+                        <a href="../retail.html">
+                            <img src="../image/return.jpg" alt="return">
+                        </a>
+                    </div>
                 </div>
             </div>
 
             <article class="retail-mid">
                 <div class="retail-left">
-                    <img src="../image/1hatde.jpg" alt="hạt dẻ">
+                    <img src="../image/0hatde.jpg" alt="hạt dẻ">
 
-                    <p>Hạt Óc chó rất bổ dưỡng, được tạo thành từ 65% chất béo và khoảng 15% protein. Chúng chứa ít carbs – hầu hết trong số đó bao gồm chất xơ.</p>
+                    <p>Đáng ra đây chính là phần giới thiệu chi tiết của sản phẩm, nhưng mà vũ quang đã quá mệt rồi nên quý vị vui lòng đọc dòng chữ này vì thông tin sản phẩm nhé, iu quý dị</p>
                 </div>
 
                 <div class="retail-right">
+                    <span id="product">Hạt dẻ: </span>
+                    <span id="cost">20000</span>
+
                     <form class="customer">
                         <table>
                             <tr>
@@ -44,7 +53,7 @@
                                 </td>
     
                                 <td>
-                                    <input type="text" id="retail-name" class="reail-input">
+                                    <input type="text" id="retail-name" class="retail-input">
                                 </td>
                             </tr>
     
@@ -54,7 +63,7 @@
                                 </td>
     
                                 <td>
-                                    <input type="text" id="retail-age" class="reail-input">
+                                    <input type="text" id="retail-age" class="retail-input">
                                 </td>
                             </tr>
     
@@ -64,10 +73,20 @@
                                 </td>
     
                                 <td>
-                                    <input type="text" id="retail-email" class="reail-input">
+                                    <input type="text" id="retail-email" class="retail-input">
                                 </td>
                             </tr>
     
+                            <tr>
+                                <td>
+                                    <label class="wholesale-infor">Địa chỉ:</label>
+                                </td>
+    
+                                <td>
+                                    <input type="text" id="retail-address" class="retail-input">
+                                </td>
+                            </tr>
+
                             <tr>
                                 <td>
                                     <label class="retail-infor">Giới tính</label>
@@ -95,14 +114,14 @@
                                 </td>
     
                                 <td>
-                                    <input type="text"id="retail-idea" class="reail-input">
+                                    <input type="text"id="retail-idea" class="retail-input">
                                 </td>
                             </tr>
                         </table>
     
                         <div>
-                            <input class="retail-button" type="button" value="Gửi thông tin" onclick="wholesale()">
-                            <input class="retail-button" type="button" value="Reset" onclick="wholesaleReset()">
+                            <input class="retail-button" type="button" value="Gửi thông tin" onclick="retail()">
+                            <input class="retail-button" type="button" value="Reset" onclick="retailReset()">
                         </div>
                     </form>
                 </div>
